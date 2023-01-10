@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.firstsection {
+    background-image: url(images/building.jpg);
+    background-repeat: no-repeat;
+}    
+.heading{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding-left: 20px;
+}
+li {
+    list-style: none;
+    padding-right: 15px;
+}
+li:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin-left: 10px;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin: 10px;   
+}
+a img {
+    width: 40px;
+}
+.thirdsection img {
+    width: 100%;
+    height: 100%;
+}
+.secondsection, .thirdsection, .forthsection {
+    max-width: 900px;
+}
+h3 {
+    padding-top: 70px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+
+}
+.buttons {
+    padding-top: 50px;
+}
+h3 ,.secondsection p{
+    font-size: 30px;
+    margin-top: 10px;
+    width: 700px;
+}
+.spans {
+    margin-top: 70px;
+    display: flex;
+    justify-content:space-between ;
+}
+.description {
+    height: 70px;
+}
+h2 {
+    margin-top: 30px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.botoom-box {
+    background-color: #ebe9e9;
+}
+.grid {
+    width: 900px;
+    margin-top: 70px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.description {
+    width: 275px;
+    background-color: whitesmoke;
+    height: 130px;
+    padding: 25px;
+    font-size: 14px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button img {
+    width: 40px;
+}
+.wrapper {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    gap: 10px;
+}
+.packgage {
+    background-color: rgb(231, 230, 230);
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+}
+.package span {
+    padding: 20px;
+}
+.form {
+    background-color: white;
+}
+button {
+    background-color: blue;
+}
+.spans {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: rgb(194, 194, 190);
+}
+.menu {
+    display: none;
+}
+@media (max-width:768px) {
+    .nav {
+        display : none
+    }
+    .menu {
+        display: inline-block;
+        width: 40px;
+        margin-right: 10px;
+    }
+    .menu img {
+        width: 100%;
+    }
+    .forthsection {
+        height: 1200px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    }
+    .packgage span {
+        padding-top: 5px;
+    } 
+    .packgage form {
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .spans {
+        padding: 20px;
+    }
+}
